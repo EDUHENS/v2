@@ -6,7 +6,7 @@ import Header from './Header';
 import SubmissionsTable from './ui/SubmissionsTable';
 import Pagination from './ui/Pagination';
 import SummaryCard from './ui/SummaryCard';
-import { Eye, Calendar, Copy, Share, CheckCircle2, XCircle, CheckCircle, FileText, Github } from 'lucide-react';
+import { CheckCircle2, XCircle, CheckCircle, FileText, Github } from 'lucide-react';
 import { Task } from './Sidebar';
 
 interface SimpleSubmission {
@@ -120,38 +120,7 @@ export default function ClosedTaskReview({
           taskTitle={task.title}
           scheduledStart={schedule.startDate}
           scheduledEnd={schedule.endDate}
-          actions={
-            <>
-              {/* Preview Button */}
-              <button 
-                className="bg-white border border-[#cccccc] border-solid box-border content-stretch flex gap-[7px] items-center justify-center max-w-[160px] overflow-visible px-[16px] py-[12px] relative rounded-[4px] shrink-0 w-[160px] hover:bg-gray-50 hover:border-[#999999] transition-colors cursor-pointer">
-                <Eye className="w-3 h-3 text-[#595959]" />
-                <span className="font-['Helvetica_Neue:Regular', sans-serif] leading-[normal] not-italic relative shrink-0 text-[#595959] text-[14px] text-nowrap whitespace-pre">
-                  Preview
-                </span>
-              </button>
-              
-              {/* Task Schedule Button */}
-              <button 
-                className="bg-white border border-[#cccccc] border-solid box-border content-stretch flex gap-[7px] items-center justify-center max-w-[180px] overflow-visible px-[16px] py-[12px] relative rounded-[4px] shrink-0 w-[180px] hover:bg-gray-50 hover:border-[#999999] transition-colors cursor-pointer">
-                <Calendar className="w-3 h-3 text-[#595959]" />
-                <span className="font-['Helvetica_Neue:Regular', sans-serif] leading-[normal] not-italic relative shrink-0 text-[#595959] text-[14px] text-nowrap whitespace-pre">
-                  Task Schedule
-                </span>
-              </button>
-              
-              {/* TaskLink Section */}
-              <div className="bg-white border border-[#cccccc] border-solid box-border content-stretch flex gap-[8px] items-center justify-between max-w-[200px] overflow-visible px-[16px] py-[12px] relative rounded-[4px] shrink-0 w-[200px]">
-                <span className="font-['Helvetica_Neue:Regular', sans-serif] leading-[normal] not-italic relative shrink-0 text-[#484de6] text-[14px] text-nowrap whitespace-pre underline cursor-pointer">
-                  TaskLink
-                </span>
-                <div className="flex gap-[8px] items-center">
-                  <Copy className="w-3 h-3 text-[#595959] cursor-pointer hover:text-[#333333] transition-colors" />
-                  <Share className="w-3 h-3 text-[#595959] cursor-pointer hover:text-[#333333] transition-colors" />
-                </div>
-              </div>
-            </>
-          }
+          actions={null}
         />
       }
       leftContent={
