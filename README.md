@@ -1,36 +1,127 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EDUHENS v2 - Educator Assessment Platform
 
-## Getting Started
+A comprehensive Learning Management System (LMS) designed for educators to manage tasks, assess student submissions, and provide feedback with AI-powered assistance.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Core Functionality
+- **Task Management**: Create, modify, and publish educational tasks
+- **Student Submissions**: Track and review student work submissions
+- **AI Assessment**: Hens AI provides automated assessment and feedback
+- **Educator Assessment**: Manual grading with Pass/Fail options and feedback
+- **Dashboard Views**: Separate interfaces for ongoing and closed tasks
+
+### Key Components
+- **Submission Details Modal**: Comprehensive assessment interface
+- **Closed Task Review**: Inline assessment panel for completed tasks
+- **Ongoing Task Management**: Real-time task monitoring and modification
+- **Corporate LMS Design**: Professional, responsive interface
+
+## 🛠️ Technology Stack
+
+- **Frontend**: React 18 with TypeScript
+- **Framework**: Next.js 15.5.6
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Build Tool**: Turbopack
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── ui/                 # Reusable UI components
+│   ├── inputs/             # Form input components
+│   ├── layouts/            # Layout components
+│   ├── App.tsx            # Main application component
+│   ├── ClosedTaskReview.tsx
+│   ├── OngoingTasks.tsx
+│   ├── SubmissionDetailsModal.tsx
+│   └── ...
+├── services/              # Business logic services
+└── lib/                   # Utility functions
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚦 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Installation
 
-## Learn More
+1. Clone the repository:
+```bash
+git clone https://github.com/EDUHENS/v2.git
+cd v2
+```
 
-To learn more about Next.js, take a look at the following resources:
+2. Install dependencies:
+```bash
+npm install
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Start the development server:
+```bash
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Deploy on Vercel
+## 🎯 Usage
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### For Educators
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Create Tasks**: Use the task creation form to design educational activities
+2. **Monitor Submissions**: View student submissions in the ongoing tasks view
+3. **Assess Work**: Click on submissions to open the assessment modal
+4. **Provide Feedback**: Use Pass/Fail grading and written feedback
+5. **Review Closed Tasks**: Access completed assessments in the closed tasks view
+
+### Assessment Workflow
+
+1. **Student Submission**: Students submit their work with notes and attachments
+2. **AI Assessment**: Hens AI automatically evaluates the submission
+3. **Educator Review**: Teachers can review AI assessment and provide their own
+4. **Final Approval**: Single "Approve Grade" button completes the process
+
+## 🔧 Development
+
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
+### Key Features Implemented
+
+- ✅ Responsive modal design
+- ✅ Corporate LMS styling
+- ✅ AI assessment integration
+- ✅ Educator assessment forms
+- ✅ Student submission tracking
+- ✅ Task management system
+- ✅ Pass/Fail grading system
+- ✅ Feedback collection
+- ✅ File attachment support
+
+## 📝 Recent Updates
+
+- Removed redundant EducatorSubmissionModal
+- Implemented single "Approve Grade" workflow
+- Added corporate padding and border styling
+- Enhanced responsive design for all screen sizes
+- Streamlined assessment process
+
+## 🤝 Contributing
+
+This is a private repository for the EDUHENS project. For contributions, please contact the development team.
+
+## 📄 License
+
+Private - All rights reserved by EDUHENS.
+
+---
+
+**EDUHENS v2** - Empowering educators with intelligent assessment tools.
